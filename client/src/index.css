@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-night-950: #05061a;
+  --color-night-900: #0a0e27;
+  --color-night-800: #12163d;
+  --color-night-700: #1a1a3e;
+  --color-glow-blue: #4f8cff;
+  --color-glow-violet: #8a5cff;
+  --color-glow-pink: #ff7ac6;
+}
+
+body {
+  background: radial-gradient(ellipse at top, #12163d 0%, #05061a 70%);
+  color: #e8eaf6;
+  font-family: 'Poppins', sans-serif;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(79, 140, 255, 0.08);
+}
+
+.glow-text {
+  text-shadow: 0 0 20px rgba(138, 92, 255, 0.6);
+}
