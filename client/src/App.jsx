@@ -1,5 +1,6 @@
 import Hero from "./components/Hero";
 import Starfield from "./components/Starfield";
+import TechStack from "./components/TechStack";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Starfield />
       <div className="relative z-10">
         <Hero />
+        <TechStack />
       </div>
     </div>
   );
