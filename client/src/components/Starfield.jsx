@@ -31,10 +31,8 @@ export default function Starfield() {
       stars.forEach((star) => {
         star.opacity += star.opacityDir * 0.005;
         if (star.opacity <= 0.1 || star.opacity >= 1) star.opacityDir *= -1;
-
         star.y += star.speed;
         if (star.y > canvas.height) star.y = 0;
-
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
         ctx.fillStyle = star.color;
@@ -52,11 +50,5 @@ export default function Starfield() {
     };
   }, []);
 
-  return (
-    <canvas
-      ref={canvasRef}
-      className="fixed inset-0 z-0"
-      
-    />
-  );
+  return <canvas ref={canvasRef} className="fixed inset-0 z-0" />;
 }

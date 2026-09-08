@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import {
   SiReact, SiJavascript, SiTailwindcss, SiHtml5, SiCss,
-  SiNodedotjs, SiExpress, SiMongodb,
-  SiVercel, SiRender, SiGit, SiGithub,
+  SiNodedotjs, SiExpress, SiMongodb, SiPython, SiSolidity,
+  SiVercel, SiGit, SiGithub, SiDocker,
 } from "react-icons/si";
 
 const stack = {
@@ -17,12 +17,14 @@ const stack = {
     { name: "Node.js", icon: <SiNodedotjs className="text-green-500" /> },
     { name: "Express.js", icon: <SiExpress className="text-gray-300" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
+    { name: "Python", icon: <SiPython className="text-yellow-300" /> },
   ],
-  "Tools & Deploy": [
+  "Other": [
+    { name: "Solidity", icon: <SiSolidity className="text-gray-300" /> },
+    { name: "Docker", icon: <SiDocker className="text-blue-400" /> },
     { name: "Git", icon: <SiGit className="text-red-500" /> },
     { name: "GitHub", icon: <SiGithub className="text-gray-200" /> },
     { name: "Vercel", icon: <SiVercel className="text-white" /> },
-    { name: "Render", icon: <SiRender className="text-purple-400" /> },
   ],
 };
 
